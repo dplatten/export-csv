@@ -42,7 +42,7 @@
                     rows[point.x].x = point.x;
 
                     // Pies, funnels etc. use point name in X row
-                    if (!series.xAxis) {
+                    if (!series.xAxis || point.name) {
                         rows[point.x].name = point.name;
                     }
 
