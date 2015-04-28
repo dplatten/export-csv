@@ -192,7 +192,7 @@
                 var csv = this.getCSV(true);
                 getContent(
                     this,
-                    'data:text/csv,' + csv.replace(/\n/g, '%0A'),
+                    'data:text/csv;charset=utf-8,%EF%BB%BF' + csv.replace(/\n/g, '%0A'),
                     'csv',
                     csv,
                     'text/csv'
