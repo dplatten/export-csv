@@ -191,7 +191,7 @@
      * Build a HTML table with the data
      */
     Highcharts.Chart.prototype.getTable = function (useLocalDecimalPoint) {
-        var html = '<table>',
+        var html = '<table class="table table-bordered table-hover small">',
             rows = this.getDataRows();
 
         // Transform the rows to HTML
